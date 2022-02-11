@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrap385 {
+  max-width: 385px;
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#login-form {
+  display: flex;
+  font-size: 20px;
+}
+
+#greeting {
+  padding-bottom: 50px;
+}
+
+input{
+  padding-left: 20px;
+  font-size: 20px;
+  border: 1px solid #000;
+}
+
+input,
+button {
+  height: 40px;
+}
+
+button {
+  margin-left: 20px;
+  width: 100px;
+}
+
+#clock {
+  padding: 100px 0;
+  font-size: 40px;
+}
+
+#todo-form {
+  padding-bottom: 40px;
+}
+#todo-form input {
+  width: 100%;
+}
+
+#todo-list {
+  list-style: none;
+}
+
+#todo-list li {
+  margin-top: 10px;
+  padding: 10px 0;
+  background-color:antiquewhite;
+  border: 1px solid #000;
+
+}
+
+#quote {
+  position: relative;
+  margin-top: 40px;
+  padding-bottom: 50px;
+  font-size: 25px;
+}
+
+#quote span {
+  display: block;
+}
+
+#quote span:last-child {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+#quote:hover span:last-child {
+  bottom: 0;
+  opacity: 1;
+}
